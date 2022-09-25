@@ -7,22 +7,49 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="90dp"
         android:layout_height="39dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginEnd="150dp"
+        android:layout_marginBottom="80dp"
         android:text="Hello World!"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.461"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/aboutMeButton"
         app:layout_constraintVertical_bias="0.342" />
 
     <Button
         android:id="@+id/aboutMeButton"
+        android:layout_width="112dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="150dp"
+        android:layout_marginBottom="60dp"
+        android:text="About Me"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/AdCapButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="About Me"
-        tools:layout_editor_absoluteX="136dp"
-        tools:layout_editor_absoluteY="126dp" />
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="150dp"
+        android:layout_marginBottom="60dp"
+        android:text="AdCap Clone"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
